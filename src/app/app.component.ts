@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'INPUT_EXAMPLE';
+
+ public parentCount:number = 0;
+
+ add(){
+  this.parentCount += 1;
+ }
+
+ remove(){
+  if(this.parentCount>0)
+  this.parentCount -= 1;
+ }
+
+ reset(){this.parentCount=0}
+
 }
