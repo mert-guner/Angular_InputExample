@@ -18,6 +18,8 @@ export class AppComponent {
   this.parentCount -= 1;
  }
 
- reset(){this.parentCount=0}
+ reset(){
+  this.parentCount=0
+}
 
 }
